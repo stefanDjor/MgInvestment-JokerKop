@@ -17,10 +17,10 @@ export const NavBarLeftPlace = styled.div`
       color: orange;
     }
   }
-  .menu_item {
+  .navlink {
     color: black;
   }
-  .menu_item.active {
+  .navlink.active {
     color: orange;
   }
 `;

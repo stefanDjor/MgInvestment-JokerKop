@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Hamburger } from "../../assets/icon/hamburger";
 import {
   LeftNavBarPlace,
   LinkPlaceNav,
   NavBarContainer,
   RightNavBarPlace,
+  NavBarHamburger,
 } from "./NavBar.styled";
 import { routes } from "../../routes/routes";
 
@@ -22,6 +24,9 @@ export const NavBar = () => {
             <JokerLogo />
           </NavLink>
         </LeftNavBarPlace>
+        <NavBarHamburger onClick={() => setNavbar(!navBar)}>
+          <Hamburger />
+        </NavBarHamburger>
         <RightNavBarPlace>
           <LinkPlaceNav>
             {routes.map((route, i) => {

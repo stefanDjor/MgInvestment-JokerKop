@@ -19,7 +19,7 @@ export const RightNavBarPlace = styled.div`
   a {
     text-decoration: none;
     color: black;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: black;
@@ -48,5 +48,6 @@ export const NavBarHamburger = styled.div`
   display: none;
   @media (max-width: 760px) {
     display: flex;
+    align-items: center;
   }
 `;

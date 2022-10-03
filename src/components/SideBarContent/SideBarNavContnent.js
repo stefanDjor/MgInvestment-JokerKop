@@ -6,6 +6,7 @@ import {
 } from "./SideBarContent.styled";
 import { Link, NavLink } from "react-router-dom";
 import { JokerLogo } from "../../assets/icon/jokerlogo";
+import { routes } from "../../routes/routes";
 
 export const SideBarNavContnent = () => {
   return (
@@ -17,19 +18,21 @@ export const SideBarNavContnent = () => {
           </Link>
         </LogoPlaceNav>
         <LinkPlaceNav>
-          <NavLink className={`menu_item ? 'active' : ''}`} to="/">
-            O nama
-          </NavLink>
-          <NavLink className={`menu_item ? 'active' : ''}`} to="/mg-investment">
-            MG Investment
-          </NavLink>
-          <NavLink className={`menu_item ? 'active' : ''}`} to="/joker-kop">
-            Joker Kop
-          </NavLink>
-          <NavLink className={`menu_item ? 'active' : ''}`} to="/contact">
-            Kontakt
-          </NavLink>
-        </LinkPlaceNav>
+            {routes.map((route, i) => {
+              return (
+                <NavLink
+                  key={route.name}
+                  className="navlink"
+                  to={route.path}
+                  end={route.name === "Home"}
+                >
+                  {route.name}
+                  
+                </NavLink>
+              );
+            })}
+            
+          </LinkPlaceNav>
       </NavBarLeftPlace>
     </>
   );
