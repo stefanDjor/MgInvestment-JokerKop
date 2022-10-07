@@ -11,6 +11,9 @@ import { World } from "../../assets/icon/world";
 import { Phone } from "../../assets/icon/phone";
 import { MapPin } from "../../assets/icon/mapPin";
 import { JokerLogoWhite } from "../../assets/jokerlogowhite";
+import { MglogoWhite } from "../../assets/mglogowhite";
+import { CopyRight } from "../Copyright/CopyRight";
+
 export const Footer = () => {
   return (
     <>
@@ -20,7 +23,8 @@ export const Footer = () => {
             <H1 orange bold>
               MG Investment
             </H1>
-            <Flex column gap="1rem">
+            <Flex column gap="3rem">
+              <Flex column gap="1rem">
               <Flex center gap="1rem">
                 <World />
                 <P1 white> mginvestment973@gmail.com</P1>
@@ -33,6 +37,10 @@ export const Footer = () => {
                 <MapPin />
                 <P1 white> Mirka Tomića 1/10 </P1>
               </Flex>
+              </Flex>
+              <Flex justcenter>
+                <MglogoWhite />
+              </Flex>
             </Flex>
           </FooterLeft>
           <FooterRight>
@@ -40,6 +48,7 @@ export const Footer = () => {
               Joker Kop
             </H1>
             <Flex column gap="1rem">
+              <Flex column gap="1rem">
               <Flex center gap="1rem">
                 <World />
                 <P1 white>jokerkop037@gmail.com</P1>
@@ -52,10 +61,16 @@ export const Footer = () => {
                 <MapPin />
                 <P1 white> Mirka Tomića 1/10 </P1>
               </Flex>
+              </Flex>
+              <Flex justcenter>
+              <JokerLogoWhite />
+              </Flex>
             </Flex>
           </FooterRight>
         </FooterDown>
+        
       </FooterConatiner>
+      <CopyRight />
     </>
   );
 };

@@ -1,15 +1,11 @@
 import React from "react";
 
 export const JokerLogo = () => (
-    // <?xml version="1.0" standalone="no"?>
-    // <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-    //  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
      width="140px"  viewBox="0 0 1600.000000 664.000000"
      preserveAspectRatio="xMidYMid meet">
     
-    <g transform="translate(0.000000,664.000000) scale(0.100000,-0.100000)"
-    fill="#000000" stroke="none">
+    <g transform="translate(0.000000,664.000000) scale(0.100000,-0.100000)">
     <path d="M4670 6220 c-8 -5 -24 -10 -36 -10 -29 0 -71 -48 -92 -106 -31 -84
     -49 -112 -84 -122 -18 -6 -109 -18 -203 -27 -93 -8 -201 -22 -240 -30 -152
     -32 -223 -45 -299 -55 -43 -5 -81 -12 -85 -14 -3 -2 -58 -7 -121 -11 -63 -3

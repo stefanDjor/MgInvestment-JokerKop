@@ -10,24 +10,21 @@ export const routes = [
   {
     path: '/',
     Component: Home,
-    name: 'Home',
+    name: 'Pocetna',
   },
   {
     path: '/mg-investment',
     Component: MgInvestment,
-    name: 'Mginvestment',
+    name: 'MG Investment',
   },
   {
     path: '/joker-kop',
     Component: JokerKop,
-    name: 'Jokerkop',
+    name: 'Joker Kop',
   },
   {
     path: '/contact',
     Component: Contact,
-    name: 'Contact',
+    name: 'Kontakt',
   },
-  
-  
-  
 ]

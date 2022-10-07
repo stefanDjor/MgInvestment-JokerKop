@@ -9,9 +9,17 @@ export const NavBarContainer = styled.div`
   background: #ffffff;
   box-shadow: 0px 0px 24.9653px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  
 `;
 export const LeftNavBarPlace = styled.div`
   cursor: pointer;
+`;
+
+export const LogoPlaceNav = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
 `;
 export const RightNavBarPlace = styled.div`
   display: flex;
@@ -29,10 +37,7 @@ export const RightNavBarPlace = styled.div`
   }
   .navlink.active {
     color: orange;
-  }
-    &:hover {
-      color: orange;
-    }
+  };
     @media (max-width: 760px) {
       display: none;
     }

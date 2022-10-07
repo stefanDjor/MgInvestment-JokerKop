@@ -7,6 +7,7 @@ import {
   NavBarContainer,
   RightNavBarPlace,
   NavBarHamburger,
+  LogoPlaceNav,
 } from "./NavBar.styled";
 import { routes } from "../../routes/routes";
 
@@ -21,27 +22,31 @@ export const NavBar = () => {
       <NavBarContainer>
         <LeftNavBarPlace>
           <NavLink className={`menu_item ? 'active' : ''}`} to="/">
-            <JokerLogo />
+            <LogoPlaceNav>
+           <JokerLogo />
+           <Mglogomg /> 
+           </LogoPlaceNav>
           </NavLink>
+          
         </LeftNavBarPlace>
         <NavBarHamburger onClick={() => setNavbar(!navBar)}>
           <Hamburger />
         </NavBarHamburger>
         <RightNavBarPlace>
           <LinkPlaceNav>
-            {routes.map((route, i) => {
-              return (
-                <NavLink
-                  key={route.name}
-                  className="navlink"
-                  to={route.path}
-                  end={route.name === "Home"}
-                >
-                  {route.name}
-                </NavLink>
-              );
-            })}
-          </LinkPlaceNav>
+              {routes.map((route, i) => {
+                return (
+                  <NavLink
+                    key={route.name}
+                    className="navlink"
+                    to={route.path}
+                    end={route.name === "Pocetna"}
+                  >
+                    {route.name}
+                  </NavLink>
+                );
+              })}
+            </LinkPlaceNav>
         </RightNavBarPlace>
       </NavBarContainer>
       <SideSlider open={navBar} onClose={setNavbar} />

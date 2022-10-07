@@ -5,8 +5,8 @@ export const JokerLogoWhite = () => (
     // <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
     //  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-     width="540pt"  viewBox="0 0 1600.000000 664.000000"
-     preserveAspectRatio="xMidYMid meet">
+    width="140px"  viewBox="0 0 1600.000000 664.000000"
+    preserveAspectRatio="xMidYMid meet">
     
     <g transform="translate(0.000000,664.000000) scale(0.100000,-0.100000)"
     fill="#fff" stroke="none">

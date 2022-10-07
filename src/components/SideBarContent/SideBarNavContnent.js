@@ -7,6 +7,7 @@ import {
 import { Link, NavLink } from "react-router-dom";
 import { JokerLogo } from "../../assets/icon/jokerlogo";
 import { routes } from "../../routes/routes";
+import { MglogoWhite } from "../../assets/mglogowhite";
 
 export const SideBarNavContnent = () => {
   return (
@@ -33,6 +34,11 @@ export const SideBarNavContnent = () => {
             })}
             
           </LinkPlaceNav>
+          <LogoPlaceNav>
+          <Link to="/">
+            <MglogoWhite />
+          </Link>
+        </LogoPlaceNav>
       </NavBarLeftPlace>
     </>
   );
