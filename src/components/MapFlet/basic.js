@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MapContainer as MyContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 import osm from "./osm-providers";
 import { useRef } from "react";
 import "leaflet/dist/leaflet.css";
@@ -18,7 +18,7 @@ export const BasicMap = () => {
   });
   
   return (
-    <MyContainer center={position} zoom={16} scrollWheelZoom={false}>
+    <Map center={position} zoom={16} scrollWheelZoom={false}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -30,6 +30,6 @@ export const BasicMap = () => {
       <Marker position={position1} icon={iconLocation}>
         <Popup>Nasa lokacija</Popup>
       </Marker>
-    </MyContainer>
+    </Map>
   );
 };
