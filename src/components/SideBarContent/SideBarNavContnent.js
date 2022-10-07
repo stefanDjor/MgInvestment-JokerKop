@@ -8,6 +8,7 @@ import { Link, NavLink } from "react-router-dom";
 import { JokerLogo } from "../../assets/icon/jokerlogo";
 import { routes } from "../../routes/routes";
 import { MglogoWhite } from "../../assets/mglogowhite";
+import { Mglogomg } from "../../assets/icon/mglogomg";
 
 export const SideBarNavContnent = () => {
   return (
@@ -25,7 +26,7 @@ export const SideBarNavContnent = () => {
                   key={route.name}
                   className="navlink"
                   to={route.path}
-                  end={route.name === "Home"}
+                  end={route.name === "Pocetna"}
                 >
                   {route.name}
                   
@@ -36,7 +37,7 @@ export const SideBarNavContnent = () => {
           </LinkPlaceNav>
           <LogoPlaceNav>
           <Link to="/">
-            <MglogoWhite />
+            <Mglogomg />
           </Link>
         </LogoPlaceNav>
       </NavBarLeftPlace>

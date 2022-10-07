@@ -3,7 +3,7 @@ import React from "react";
 export const Mglogomg = () => (
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
 	 viewBox="0 0 360 24.9" enableBackground="new 0 0 360 24.9"
-   width="40%">
+   width="75%" >
 <g>
 	<path fill="blue" d="M20.9,9.7c-0.2,0.2-0.4,0.4-0.6,0.6c-1.8,2.1-3.6,4.3-5.3,6.4c-0.1,0.1-0.1,0.1-0.2,0.2
 		c-0.5,0.6-0.8,0.6-1.3,0c-0.8-1-1.7-2-2.5-3c-1-1.2-2.1-2.5-3.1-3.7C7.8,10,7.6,9.9,7.5,9.7c-0.4,0.3-0.3,0.7-0.3,1

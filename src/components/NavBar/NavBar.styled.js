@@ -17,9 +17,11 @@ export const LeftNavBarPlace = styled.div`
 
 export const LogoPlaceNav = styled.div`
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   display: flex;
   gap: 2rem;
+  height: 70px;
+  max-width: 320px;
 `;
 export const RightNavBarPlace = styled.div`
   display: flex;
@@ -38,7 +40,7 @@ export const RightNavBarPlace = styled.div`
   .navlink.active {
     color: orange;
   };
-    @media (max-width: 760px) {
+    @media (max-width: 900px) {
       display: none;
     }
   
@@ -51,7 +53,7 @@ export const LinkPlaceNav = styled.div`
 `;
 export const NavBarHamburger = styled.div`
   display: none;
-  @media (max-width: 760px) {
+  @media (max-width: 900px) {
     display: flex;
     align-items: center;
   }

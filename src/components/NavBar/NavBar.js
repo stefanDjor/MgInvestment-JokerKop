@@ -14,6 +14,7 @@ import { routes } from "../../routes/routes";
 import SideSlider from "../../components/SideSlider";
 import { JokerLogo } from "../../assets/icon/jokerlogo";
 import { Mglogomg } from "../../assets/icon/mglogomg";
+import { Flex } from "../../Styling/GlobalStyles";
 
 export const NavBar = () => {
   const [navBar, setNavbar] = useState(false);
@@ -21,32 +22,39 @@ export const NavBar = () => {
     <>
       <NavBarContainer>
         <LeftNavBarPlace>
-          <NavLink className={`menu_item ? 'active' : ''}`} to="/">
+          <NavLink
+            className={`menu_item ? 'active' : ''}`}
+            to="/"
+          >
             <LogoPlaceNav>
-           <JokerLogo />
-           <Mglogomg /> 
-           </LogoPlaceNav>
+              {/* <JokerLogo /> */}
+              {window.location.pathname === "/mg-investment" ? (
+                <Mglogomg />
+              ) : (
+                <JokerLogo />
+              )}
+              {/* <Mglogomg />  */}
+            </LogoPlaceNav>
           </NavLink>
-          
         </LeftNavBarPlace>
         <NavBarHamburger onClick={() => setNavbar(!navBar)}>
           <Hamburger />
         </NavBarHamburger>
         <RightNavBarPlace>
           <LinkPlaceNav>
-              {routes.map((route, i) => {
-                return (
-                  <NavLink
-                    key={route.name}
-                    className="navlink"
-                    to={route.path}
-                    end={route.name === "Pocetna"}
-                  >
-                    {route.name}
-                  </NavLink>
-                );
-              })}
-            </LinkPlaceNav>
+            {routes.map((route, i) => {
+              return (
+                <NavLink
+                  key={route.name}
+                  className="navlink"
+                  to={route.path}
+                  end={route.name === "Pocetna"}
+                >
+                  {route.name}
+                </NavLink>
+              );
+            })}
+          </LinkPlaceNav>
         </RightNavBarPlace>
       </NavBarContainer>
       <SideSlider open={navBar} onClose={setNavbar} />
