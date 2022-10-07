@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer,M  } from "react-leaflet";
 import osm from "./osm-providers";
 import { useRef } from "react";
 import "leaflet/dist/leaflet.css";
@@ -10,11 +10,13 @@ export const BasicMap = () => {
   const ZOOM_LEVEL = 15;
   const mapRef = useRef();
   const position = [43.582147, 21.327327];
+  const position1 = [43.598147, 21.327327];
   const iconLocation = new L.Icon({
     iconUrl: require("../../assets/images/location.png"),
     iconRetinaUrl: require("../../assets/images/location.png"),
     iconSize: new L.Point(60, 60),
   });
+  
   return (
     <MapContainer center={position} zoom={16} scrollWheelZoom={false}>
       <TileLayer
@@ -23,6 +25,9 @@ export const BasicMap = () => {
       />
 
       <Marker position={position} icon={iconLocation}>
+        <Popup>Nasa lokacija</Popup>
+      </Marker>
+      <Marker position={position1} icon={iconLocation}>
         <Popup>Nasa lokacija</Popup>
       </Marker>
     </MapContainer>
