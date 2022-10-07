@@ -5,8 +5,8 @@ export const NavBarLeftPlace = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
-  padding-left: 1.25rem;
+  gap: 3.5rem;
+  /* padding-left: 1.25rem; */
   a {
     color: black;
     text-decoration: none;
