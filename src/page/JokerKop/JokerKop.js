@@ -79,7 +79,7 @@ export const JokerKop = () => {
             </InfraContainerSecondRight>
           </InfraContainerSecond>
           
-          <InfraContainer>
+          {/* <InfraContainer>
             <InfraContainerLeft>
               <P1 center>
                 <b>Joker Kop</b> izvlaci kamen iz kamenoloma Lesje. 
@@ -93,7 +93,7 @@ export const JokerKop = () => {
                 <img src={Kamenolom1} alt="" />
               </InfraCard>
             </InfraContainerRight>
-          </InfraContainer>
+          </InfraContainer> */}
         </CoridorContainer>
         <Footer />
       </WrapperContainer>
