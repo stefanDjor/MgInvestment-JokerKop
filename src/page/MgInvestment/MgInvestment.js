@@ -49,15 +49,15 @@ import Vozilo1 from "../../assets/images/Vozilo1.png";
 import Vozilo2 from "../../assets/images/Vozilo2.png";
 import { Lineleftright } from "../../assets/icon/lineleftright";
 import { Footer } from "../../components/Footer/Footer";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 export const MgInvestment = () => {
   return (
     <motion.div
-    style={{ width: '100%' }}
-    initial={{ opacity: 0, transform: 'translateY(-10px)' }}
-    animate={{ opacity: 1, transform: 'translateY(0px)' }}
-    exit={{ opacity: 0, transform: 'translateY(-10px)' }}
-  >
+      style={{ width: "100%" }}
+      initial={{ opacity: 0, transform: "translateY(-10px)" }}
+      animate={{ opacity: 1, transform: "translateY(0px)" }}
+      exit={{ opacity: 0, transform: "translateY(-10px)" }}
+    >
       <WrapperContainer>
         <NavContainer>
           <NavBar />
@@ -287,10 +287,10 @@ export const MgInvestment = () => {
           <InfraContainer>
             <InfraContainerLeft>
               <P1 center>
-                <b>MG INVESTMENT</b> u svom voznom parku uglavnom poseduje kamione
-                četvoroosovince kipere i to: 12 kamiona marke Volvo i 5 kamiona
-                tipa MAN Takođe posedujemo i jednu autocisternu za dostavu
-                goriva kao i jedan kamion tegljač marke Renault.
+                <b>MG INVESTMENT</b> u svom voznom parku uglavnom poseduje
+                kamione četvoroosovince kipere i to: 12 kamiona marke Volvo i 5
+                kamiona tipa MAN Takođe posedujemo i jednu autocisternu za
+                dostavu goriva kao i jedan kamion tegljač marke Renault.
               </P1>
             </InfraContainerLeft>
             <InfraContainerRight>
@@ -305,6 +305,6 @@ export const MgInvestment = () => {
         </MgInvestmentContainer>
         <Footer />
       </WrapperContainer>
-      </motion.div>
+    </motion.div>
   );
 };

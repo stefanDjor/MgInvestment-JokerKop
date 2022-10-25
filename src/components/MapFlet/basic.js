@@ -15,7 +15,7 @@ export const BasicMap = () => {
     iconRetinaUrl: require("../../assets/images/location.png"),
     iconSize: new L.Point(60, 60),
   });
-  
+
   return (
     <Map center={position} zoom={15} scrollWheelZoom={false}>
       <TileLayer

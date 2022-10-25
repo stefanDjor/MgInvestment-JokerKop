@@ -11,14 +11,19 @@ export const JokerKopContainer = styled.div`
   gap: 2rem;
 `;
 export const NavContainer = styled.div`
-   width: 100%;
-  height: 550px;
+  width: 100%;
+  height: 750px;
   display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
   flex-direction: column;
   background-image: url(${backgroundImg});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  @media (max-width: 1100px) {
+    height: 550px;
+  }
   @media (max-width: 570px) {
     height: 350px;
     background-position: center;
@@ -50,6 +55,7 @@ export const NavBarTitle = styled.div`
       font-size: 22px;
       padding-left: 1rem;
       padding-right: 1rem;
+      margin-top: 1.5rem;
     }
   }
 `;
@@ -142,11 +148,9 @@ export const JkCardPicture = styled.div`
   }
   @media (max-width: 970px) {
     width: 70%;
-
   }
   @media (max-width: 770px) {
     width: 80%;
-
   }
   @media (max-width: 520px) {
     min-width: 400px;
@@ -170,22 +174,22 @@ export const InfraContainer = styled.div`
   }
 `;
 export const CoridorContainer = styled.div`
-width: 100%;
-display: flex;
-flex-direction: column;
-gap: 2rem;
-margin-top: 2rem;
-margin-bottom: 2rem;
-padding: 2rem;
-align-items: center;
-`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  align-items: center;
+`;
 export const InfraContainerLeft = styled.div`
   display: flex;
   width: 35%;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  
+
   p {
     width: 100%;
     max-width: 800px;
@@ -229,8 +233,8 @@ export const InfraCard = styled.div`
   img {
     width: 100%;
     height: 300px;
-  } 
-`
+  }
+`;
 export const InfraContainerSecond = styled.div`
   display: flex;
   width: 100%;

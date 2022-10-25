@@ -92,10 +92,6 @@ export const JokerKop = () => {
               </JkCardPicture>
             </JkCardSecond>
           </JkCardConainer>
-
-
-
-
           <Flex center gap="2rem">
             <Lineleftright />
             <H1 orange>Tegljaci </H1>

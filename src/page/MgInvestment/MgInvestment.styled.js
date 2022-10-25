@@ -14,13 +14,18 @@ export const MgInvestmentContainer = styled.div`
 `;
 export const NavContainer = styled.div`
   width: 100%;
-  height: 550px;
+  height: 750px;
   display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
   flex-direction: column;
   background-image: url(${backgroundImg});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  @media (max-width: 1100px) {
+    height: 550px;
+  }
   @media (max-width: 570px) {
     height: 350px;
     background-position: center;
@@ -37,7 +42,6 @@ export const NavBarTitle = styled.div`
   p {
     font-size: 55px;
     font-weight: bold;
-    line-height: 56px;
     letter-spacing: 2px;
     margin: 0;
     @media (max-width: 920px) {
@@ -52,6 +56,7 @@ export const NavBarTitle = styled.div`
       font-size: 22px;
       padding-left: 1rem;
       padding-right: 1rem;
+      margin-top: 1.5rem;
     }
   }
 `;

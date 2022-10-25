@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { SideBarNavContnent } from "../components/SideBarContent/SideBarNavContnent";
+import { SideBarNavContnent } from "./SideBarNavContnent";
 
 const Overlay = styled.div`
   position: fixed;

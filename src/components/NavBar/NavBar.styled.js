@@ -9,7 +9,9 @@ export const NavBarContainer = styled.div`
   background: #ffffff;
   box-shadow: 0px 0px 24.9653px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  
+  @media (max-width: 550px) {
+    padding: 0.5rem 1.5rem;
+  }
 `;
 export const LeftNavBarPlace = styled.div`
   cursor: pointer;
@@ -17,7 +19,6 @@ export const LeftNavBarPlace = styled.div`
 
 export const LogoPlaceNav = styled.div`
   align-items: center;
-  /* justify-content: center; */
   display: flex;
   gap: 2rem;
   height: 70px;
@@ -39,11 +40,10 @@ export const RightNavBarPlace = styled.div`
   }
   .navlink.active {
     color: orange;
-  };
-    @media (max-width: 900px) {
-      display: none;
-    }
-  
+  }
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 export const LinkPlaceNav = styled.div`
   display: flex;

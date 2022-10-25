@@ -10,11 +10,9 @@ import {
   LogoPlaceNav,
 } from "./NavBar.styled";
 import { routes } from "../../routes/routes";
-
-import SideSlider from "../../components/SideSlider";
+import SideSlider from "../../components/SideBarContent/SideSlider";
 import { JokerLogo } from "../../assets/icon/jokerlogo";
 import { Mglogomg } from "../../assets/icon/mglogomg";
-import { Flex } from "../../Styling/GlobalStyles";
 
 export const NavBar = () => {
   const [navBar, setNavbar] = useState(false);
@@ -22,10 +20,7 @@ export const NavBar = () => {
     <>
       <NavBarContainer>
         <LeftNavBarPlace>
-          <NavLink
-            className={`menu_item ? 'active' : ''}`}
-            to="/"
-          >
+          <NavLink className={`menu_item ? 'active' : ''}`} to="/">
             <LogoPlaceNav>
               {/* <JokerLogo /> */}
               {window.location.pathname === "/mg-investment" ? (

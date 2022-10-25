@@ -6,7 +6,6 @@ export const NavBarLeftPlace = styled.div`
   align-items: center;
   justify-content: center;
   gap: 3.5rem;
-  /* padding-left: 1.25rem; */
   a {
     color: black;
     text-decoration: none;

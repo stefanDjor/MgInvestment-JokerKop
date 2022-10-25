@@ -10,7 +10,7 @@ import {
   NavBarTitle,
   NavContainer,
 } from "./Home.styled";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import { Security } from "../../assets/icon/security";
 import { Settings } from "../../assets/icon/settings";
 import { Group } from "../../assets/icon/group";
@@ -21,12 +21,11 @@ import { Footer } from "../../components/Footer/Footer";
 
 export const Home = () => {
   return (
-    
     <motion.div
-      style={{ width: '100%' }}
-      initial={{ opacity: 0, transform: 'translateY(-10px)' }}
-      animate={{ opacity: 1, transform: 'translateY(0px)' }}
-      exit={{ opacity: 0, transform: 'translateY(-10px)' }}
+      style={{ width: "100%" }}
+      initial={{ opacity: 0, transform: "translateY(-10px)" }}
+      animate={{ opacity: 1, transform: "translateY(0px)" }}
+      exit={{ opacity: 0, transform: "translateY(-10px)" }}
     >
       <WrapperContainer>
         <NavContainer>
@@ -110,6 +109,6 @@ export const Home = () => {
         </HomeContainer>
         <Footer />
       </WrapperContainer>
-      </motion.div>
+    </motion.div>
   );
 };
