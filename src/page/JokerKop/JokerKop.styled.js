@@ -1,21 +1,29 @@
 import styled from "styled-components";
-import backgroundImg from "../../assets/images/CoverHome.jpeg";
+// import backgroundImg from "../../assets/images/CoverHome.jpeg";
+import backgroundImg from "../../assets/images/kamioni/tegljac/tegljac.png";
 
 export const JokerKopContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 1500px;
+  margin: 0 auto;
   gap: 2rem;
 `;
 export const NavContainer = styled.div`
-  width: 100%;
-  height: 500px;
+   width: 100%;
+  height: 550px;
   display: flex;
   flex-direction: column;
   background-image: url(${backgroundImg});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  @media (max-width: 570px) {
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+  }
 `;
 export const NavBarTitle = styled.div`
   display: flex;
@@ -65,6 +73,87 @@ export const MaintText = styled.div`
     line-height: 2rem;
     text-align: center;
     margin: 0;
+  }
+`;
+export const JkCardConainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  margin: 0 auto;
+  padding: 0;
+  @media (max-width: 600px) {
+    gap: 2rem;
+  }
+`;
+export const JkCardFirst = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  @media (max-width: 970px) {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 600px) {
+    padding: 0;
+  }
+`;
+export const JkCardSecond = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  @media (max-width: 970px) {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 600px) {
+    padding: 0;
+  }
+`;
+export const JkCardPicture = styled.div`
+  width: 40%;
+  min-width: 440px;
+  background: #ffffff;
+  box-shadow: 0px 0px 22.6253px rgba(0, 0, 0, 0.15);
+  border-radius: 10.5585px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  gap: 1.5rem;
+  text-align: center;
+  img {
+    height: 440px;
+    width: 100%;
+    border-radius: 10.5585px;
+  }
+  border: 4px solid white;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 22.6253px rgba(249, 105, 14, 0.55);
+  }
+  @media (max-width: 970px) {
+    width: 70%;
+
+  }
+  @media (max-width: 770px) {
+    width: 80%;
+
+  }
+  @media (max-width: 520px) {
+    min-width: 400px;
+  }
+  @media (max-width: 460px) {
+    min-width: 310px;
+    height: 300px;
   }
 `;
 
@@ -128,7 +217,7 @@ export const InfraCard = styled.div`
   background: #ffffff;
   box-shadow: 0px 0px 22.6253px rgba(0, 0, 0, 0.15);
   border-radius: 10.5585px;
-  padding: 0.8rem;
+  padding: 0.3rem;
   gap: 1rem;
 
   border: 4px solid white;

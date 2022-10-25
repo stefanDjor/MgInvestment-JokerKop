@@ -49,9 +49,15 @@ import Vozilo1 from "../../assets/images/Vozilo1.png";
 import Vozilo2 from "../../assets/images/Vozilo2.png";
 import { Lineleftright } from "../../assets/icon/lineleftright";
 import { Footer } from "../../components/Footer/Footer";
+import { motion } from 'framer-motion';
 export const MgInvestment = () => {
   return (
-    <>
+    <motion.div
+    style={{ width: '100%' }}
+    initial={{ opacity: 0, transform: 'translateY(-10px)' }}
+    animate={{ opacity: 1, transform: 'translateY(0px)' }}
+    exit={{ opacity: 0, transform: 'translateY(-10px)' }}
+  >
       <WrapperContainer>
         <NavContainer>
           <NavBar />
@@ -299,6 +305,6 @@ export const MgInvestment = () => {
         </MgInvestmentContainer>
         <Footer />
       </WrapperContainer>
-    </>
+      </motion.div>
   );
 };

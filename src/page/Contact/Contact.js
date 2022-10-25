@@ -5,7 +5,7 @@ import { World } from "../../assets/icon/world";
 import { Footer } from "../../components/Footer/Footer";
 import { BasicMap } from "../../components/MapFlet/basic";
 import { NavBar } from "../../components/NavBar/NavBar";
-import { Flex, H1, P1, P2, WrapperContainer } from "../../Styling/GlobalStyles";
+import { H1, P1, P2, WrapperContainer } from "../../Styling/GlobalStyles";
 import {
   ContactContainer,
   FooterCard,
@@ -16,10 +16,16 @@ import {
   NavBarTitle,
   NavContainer,
 } from "./Contact.styled";
+import { motion } from 'framer-motion';
 
 export const Contact = () => {
   return (
-    <>
+    <motion.div
+      style={{ width: '100%' }}
+      initial={{ opacity: 0, transform: 'translateY(-10px)' }}
+      animate={{ opacity: 1, transform: 'translateY(0px)' }}
+      exit={{ opacity: 0, transform: 'translateY(-10px)' }}
+    >
       <WrapperContainer>
         <NavContainer>
           <NavBar />
@@ -72,6 +78,6 @@ export const Contact = () => {
         <BasicMap />
         <Footer />
       </WrapperContainer>
-    </>
+      </motion.div>
   );
 };

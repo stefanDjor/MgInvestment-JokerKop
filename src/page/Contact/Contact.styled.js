@@ -1,21 +1,28 @@
 import styled from "styled-components";
-import backgroundImg from "../../assets/images/CoverHome.jpeg";
+import backgroundImg from "../../assets/images/kamioni/tegljac/tegljac.png";
 
 export const ContactContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 1500px;
+  margin: 0 auto;
   gap: 2rem;
 `;
 export const NavContainer = styled.div`
-  width: 100%;
-  height: 500px;
+   width: 100%;
+  height: 550px;
   display: flex;
   flex-direction: column;
   background-image: url(${backgroundImg});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  @media (max-width: 570px) {
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+  }
 `;
 export const NavBarTitle = styled.div`
   display: flex;

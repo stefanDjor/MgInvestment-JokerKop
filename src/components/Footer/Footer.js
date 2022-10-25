@@ -5,7 +5,6 @@ import {
   FooterDown,
   FooterLeft,
   FooterRight,
-  FooterTitle,
 } from "./Footer.styled";
 import { World } from "../../assets/icon/world";
 import { Phone } from "../../assets/icon/phone";
@@ -59,7 +58,7 @@ export const Footer = () => {
               </Flex>
               <Flex center gap="1rem">
                 <MapPin />
-                <P1 white> Mirka Tomića 1/10 </P1>
+                <P1 white> Trg Kosturnica 58 </P1>
               </Flex>
               </Flex>
               <Flex justcenter>

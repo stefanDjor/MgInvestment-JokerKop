@@ -5,6 +5,7 @@ import { routes } from "./routes/routes";
 // import { ThemeProvider } from 'styled-components'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { SharedLayout } from '../src/components/SharedLayout/SharedLayout';
+import { Animation } from './components/Animation/Animation';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <>
       {/* <ThemeProvider > */}
       <Router>
-          <Routes>
+          {/* <Routes>
             <Route path='/' element={<SharedLayout />}>
               {routes.map((route, index) => {
                 return (
@@ -37,7 +38,8 @@ function App() {
                 );
               })}
             </Route>
-          </Routes>
+          </Routes> */}
+          <Animation />
         </Router>
       {/* </ThemeProvider> */}
     </>

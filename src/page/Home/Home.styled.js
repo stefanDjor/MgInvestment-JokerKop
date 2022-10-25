@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import backgroundImg from "../../assets/images/CoverHome.jpeg";
+// import backgroundImg from "../../assets/images/CoverHome.jpeg";
+import backgroundImg from "../../assets/images/kamioni/tegljac/tegljac.png";
 
 export const HomeContainer = styled.div`
   width: 100%;
@@ -11,7 +12,7 @@ export const HomeContainer = styled.div`
 `;
 export const NavContainer = styled.div`
   width: 100%;
-  height: 500px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   background-image: url(${backgroundImg});
@@ -19,7 +20,9 @@ export const NavContainer = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   @media (max-width: 570px) {
-    height: 400px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
   }
 `;
 export const NavBarTitle = styled.div`
