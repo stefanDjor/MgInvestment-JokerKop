@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, H1, P1, P2 } from "../../Styling/GlobalStyles";
+import { Flex, H1, P1 } from "../../Styling/GlobalStyles";
 import {
   FooterConatiner,
   FooterDown,

@@ -5,7 +5,7 @@ import { World } from "../../assets/icon/world";
 import { Footer } from "../../components/Footer/Footer";
 import { BasicMap } from "../../components/MapFlet/basic";
 import { NavBar } from "../../components/NavBar/NavBar";
-import { H1, P1, P2, WrapperContainer } from "../../Styling/GlobalStyles";
+import { H1, P1, WrapperContainer } from "../../Styling/GlobalStyles";
 import {
   ContactContainer,
   FooterCard,
